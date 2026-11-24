@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Spyridon-Pikoulas/transcripts",
+  "title": "Transcripts for AI",
+  "description": "Transcripts of YouTube, TikTok, Instagram Reels, podcasts and any video URL, via Apify's MCP server",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/Spyridon-Pikoulas/transcripts-for-ai",
+    "source": "github"
+  },
+  "websiteUrl": "https://github.com/Spyridon-Pikoulas/transcripts-for-ai",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=pikoulas/youtube-transcripts,pikoulas/tiktok-transcripts,pikoulas/instagram-transcripts,pikoulas/podcast-transcripts,pikoulas/video-transcriber",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer and your Apify API token, for clients without OAuth sign-in",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
